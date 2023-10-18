@@ -30,6 +30,11 @@ npm install
 ```
 npm run serve
 ```
+> 如果是 node 17+版本，运行时可能会报错：Error: error:0308010C:digital envelope routines::unsupported
+> 终端运行以下命令可解决：
+> set NODE_OPTIONS=--openssl-legacy-provider
+> $env:NODE_OPTIONS="--openssl-legacy-provider"
+> 参考文章：https://blog.csdn.net/m0_65933139/article/details/130690790
 
 - Compiles and minifies for production
 ```
